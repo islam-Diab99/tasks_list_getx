@@ -9,7 +9,7 @@ import 'package:tasks_app_getx/model/task.dart';
 class TasksController extends GetxController {
   final TextEditingController taskInputController = TextEditingController();
   
-  final Box<Task> tasksBox = Hive.box('tasks');
+   Box<Task> tasksBox = Hive.box('tasks');
   RxList<Task> tasks = <Task>[].obs;
 
 
